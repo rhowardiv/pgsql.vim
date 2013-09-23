@@ -204,13 +204,13 @@ syn keyword pgsqlKeyword	 group global get
 syn keyword pgsqlKeyword	 having
 syn keyword pgsqlKeyword	 immutable inherits inline intersect
 syn keyword pgsqlKeyword	 leakproof lock local limit load loop listen lateral
-syn keyword pgsqlKeyword	 natural notify next nowait
+syn keyword pgsqlKeyword	 natural next notice notify nowait
 syn keyword pgsqlKeyword	 out open offset
 syn keyword pgsqlKeyword	 password privilege
 syn keyword pgsqlKeyword	 perform
 syn keyword pgsqlKeyword	 query
-syn keyword pgsqlKeyword	 replace references restrict returning
-syn keyword pgsqlKeyword	 reassing return
+syn keyword pgsqlKeyword	 raise reassing references replace restrict
+syn keyword pgsqlKeyword	 return returning 
 syn keyword pgsqlKeyword	 strict sequences stable setof
 syn keyword pgsqlKeyword	 truncate tranaction trigger trusted
 syn keyword pgsqlKeyword	 unique unlisten
