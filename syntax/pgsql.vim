@@ -198,7 +198,7 @@ syn keyword pgsqlKeyword	 checkpoint check cost
 syn keyword pgsqlKeyword	 check columns constraint
 syn keyword pgsqlKeyword	 databases distinct declare deallocate desc
 syn keyword pgsqlKeyword	 deferrable diagnostics
-syn keyword pgsqlKeyword	 explain elsif exclusion found exception except exit
+syn keyword pgsqlKeyword	 explain elsif exclusion found exception except exclude exit
 syn keyword pgsqlKeyword	 force
 syn keyword pgsqlKeyword	 group global get
 syn keyword pgsqlKeyword	 having
