@@ -495,6 +495,23 @@ show all
 update only
 vacuum full freeze verbose
 vacuum full verbose analyze wat
+exception
+raise
+raise debug
+raise log
+raise info
+raise notice
+raise warning
+raise exception
+foreach
+while aaaa loop
+end loop
+continue
+continue when
+continue asdf when
+exit
+exit when
+exit asdf when
 return
 return next
 return query
@@ -554,7 +571,6 @@ temporary
 snapshot
 characteristics
 restart
-continue
 replica
 always
 data type
@@ -565,6 +581,13 @@ invoker
 comment
 before mah
 instead of bah
+<<<<<<< HEAD
+=======
+using gin (data)
+debug
+log
+info
+>>>>>>> 3b0c4a3... Added some PL/pgSQL constructs
 
 
 -- Complete examples
