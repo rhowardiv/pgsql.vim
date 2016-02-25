@@ -581,13 +581,10 @@ invoker
 comment
 before mah
 instead of bah
-<<<<<<< HEAD
-=======
 using gin (data)
 debug
 log
 info
->>>>>>> 3b0c4a3... Added some PL/pgSQL constructs
 
 
 -- Complete examples
