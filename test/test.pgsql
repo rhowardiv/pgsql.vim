@@ -495,6 +495,10 @@ show all
 update only
 vacuum full freeze verbose
 vacuum full verbose analyze wat
+return
+return next
+return query
+return query execute
 
 -- False statements
 beginz

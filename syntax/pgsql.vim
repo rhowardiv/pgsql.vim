@@ -54,6 +54,7 @@ syn match pgsqlKeyword      "\<on\>"
 syn match pgsqlKeyword	    "\<only\>"
 syn match pgsqlKeyword	    "\<options\>"
 syn match pgsqlKeyword	    "\<range\>"
+syn match pgsqlKeyword      "\<return\>"
 syn match pgsqlKeyword      "\<returns\>"
 syn match pgsqlKeyword	    "\<row\>"
 syn match pgsqlKeyword	    "\<rows\>"
@@ -191,6 +192,9 @@ syn match pgsqlKeyword      "\<show\(\_s\+all\)\?\>"
 syn match pgsqlKeyword      "\<\(restart\|continue\)\_s\+identity\>"
 
 syn match pgsqlKeyword      "\<vacuum\(\_s\+full\|\_s\+freeze\|\_s\+verbose\)*\>"
+
+" PL/pgSQL constructs
+syn match pgsqlKeyword      "\<return\_s\+query\>"
 
 syn keyword pgsqlKeyword	 and alias asc
 syn keyword pgsqlKeyword	 cascade current_date current_time current_timestamp
