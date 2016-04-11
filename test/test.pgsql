@@ -216,6 +216,7 @@ alter table foo validate constraint bar
 alter table foo alter column bar type baz;
 alter table foo alter column bar set data type baz;
 alter table foo alter column bar set default baz;
+alter table foo drop column bar;
 alter event trigger foo disable
 alter event trigger foo enable
 alter event trigger foo enable replica
@@ -297,6 +298,8 @@ drop attribute
 cluster
 cluster verbose asdf using
 comment on foreign table asdf is $$wat$$
+comment on column foo.bar is $$wat$$
+rename
 
 create aggregate
 create cast (foo as bar)
