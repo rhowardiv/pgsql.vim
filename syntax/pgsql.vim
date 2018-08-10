@@ -225,11 +225,11 @@ syn match   pgsqlConstant	 "\<null\>"
 
 " Section: Strings {{{2
 " Strings (single- and double-quote)
-syn region pgsqlIdentifier	 start=+"+  skip=+\\\\\|\\"+  end=+"+
-syn region pgsqlIdentifier	 start=+U&"+  skip=+\\\\\|\\"+  end=+"+
+syn region pgsqlIdentifier	 matchgroup=Quote start=+"+  skip=+\\\\\|\\"+  end=+"+
+syn region pgsqlIdentifier	 matchgroup=Quote start=+U&"+  skip=+\\\\\|\\"+  end=+"+
 
-syn region pgsqlString		 start=+'+  skip=+\\\\\|\\'+  end=+'+
-syn region pgsqlString		 start=+U&'+  skip=+\\\\\|\\'+  end=+'+
+syn region pgsqlString		 matchgroup=Quote start=+'+  skip=+\\\\\|\\'+  end=+'+
+syn region pgsqlString		 matchgroup=Quote start=+U&'+  skip=+\\\\\|\\'+  end=+'+
 
 syn match pgsqlString		 "\$\w*\$"
 " }}}
@@ -2245,6 +2245,7 @@ syn keyword pgsqlFunction	xpath
 " For version 5.7 and earlier: only when not done already
 " For version 5.8 and later: only when an item doesn't have highlighting yet
 
+hi def link Quote            Special
 hi def link pgsqlKeyword		Statement
 hi def link pgsqlConstant		Constant
 hi def link pgsqlString		String
