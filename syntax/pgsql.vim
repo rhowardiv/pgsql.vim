@@ -395,7 +395,6 @@ syn keyword pgsqlFunction	aclitemout
 syn keyword pgsqlFunction	aclremove
 syn keyword pgsqlFunction	acos
 syn keyword pgsqlFunction	adjacent
-syn keyword pgsqlFunction	after
 syn keyword pgsqlFunction	age
 syn keyword pgsqlFunction	anyarray_in
 syn keyword pgsqlFunction	anyarray_out
@@ -449,7 +448,6 @@ syn keyword pgsqlFunction	asin
 syn keyword pgsqlFunction	atan2
 syn keyword pgsqlFunction	atan
 syn keyword pgsqlFunction	avg
-syn keyword pgsqlFunction	before
 syn keyword pgsqlFunction	big5_to_euc_tw
 syn keyword pgsqlFunction	big5_to_mic
 syn keyword pgsqlFunction	big5_to_utf8
@@ -457,7 +455,6 @@ syn keyword pgsqlFunction	bit_and
 syn keyword pgsqlFunction	bitand
 syn keyword pgsqlFunction	bitcat
 syn keyword pgsqlFunction	bitcmp
-syn keyword pgsqlFunction	bit
 syn keyword pgsqlFunction	biteq
 syn keyword pgsqlFunction	bitge
 syn keyword pgsqlFunction	bitgt
@@ -502,7 +499,6 @@ syn keyword pgsqlFunction	box_contain
 syn keyword pgsqlFunction	box_contain_pt
 syn keyword pgsqlFunction	box_distance
 syn keyword pgsqlFunction	box_div
-syn keyword pgsqlFunction	box
 syn keyword pgsqlFunction	box_eq
 syn keyword pgsqlFunction	box_ge
 syn keyword pgsqlFunction	box_gt
@@ -636,7 +632,6 @@ syn keyword pgsqlFunction	ceil
 syn keyword pgsqlFunction	ceiling
 syn keyword pgsqlFunction	center
 syn keyword pgsqlFunction	character_length
-syn keyword pgsqlFunction	char
 syn keyword pgsqlFunction	chareq
 syn keyword pgsqlFunction	charge
 syn keyword pgsqlFunction	chargt
@@ -653,7 +648,6 @@ syn keyword pgsqlFunction	cideq
 syn keyword pgsqlFunction	cidin
 syn keyword pgsqlFunction	cidout
 syn keyword pgsqlFunction	cidrecv
-syn keyword pgsqlFunction	cidr
 syn keyword pgsqlFunction	cidr_in
 syn keyword pgsqlFunction	cidr_out
 syn keyword pgsqlFunction	cidr_recv
@@ -668,7 +662,6 @@ syn keyword pgsqlFunction	circle_contain
 syn keyword pgsqlFunction	circle_contain_pt
 syn keyword pgsqlFunction	circle_distance
 syn keyword pgsqlFunction	circle_div_pt
-syn keyword pgsqlFunction	circle
 syn keyword pgsqlFunction	circle_eq
 syn keyword pgsqlFunction	circle_ge
 syn keyword pgsqlFunction	circle_gt
@@ -734,7 +727,6 @@ syn keyword pgsqlFunction	database_to_xmlschema
 syn keyword pgsqlFunction	date_cmp
 syn keyword pgsqlFunction	date_cmp_timestamp
 syn keyword pgsqlFunction	date_cmp_timestamptz
-syn keyword pgsqlFunction	date
 syn keyword pgsqlFunction	date_eq
 syn keyword pgsqlFunction	date_eq_timestamp
 syn keyword pgsqlFunction	date_eq_timestamptz
@@ -1097,7 +1089,6 @@ syn keyword pgsqlFunction	int2_accum
 syn keyword pgsqlFunction	int2and
 syn keyword pgsqlFunction	int2_avg_accum
 syn keyword pgsqlFunction	int2div
-syn keyword pgsqlFunction	int2
 syn keyword pgsqlFunction	int2eq
 syn keyword pgsqlFunction	int2ge
 syn keyword pgsqlFunction	int2gt
@@ -1153,7 +1144,6 @@ syn keyword pgsqlFunction	int4_accum
 syn keyword pgsqlFunction	int4and
 syn keyword pgsqlFunction	int4_avg_accum
 syn keyword pgsqlFunction	int4div
-syn keyword pgsqlFunction	int4
 syn keyword pgsqlFunction	int4eq
 syn keyword pgsqlFunction	int4ge
 syn keyword pgsqlFunction	int4gt
@@ -1206,7 +1196,6 @@ syn keyword pgsqlFunction	int8and
 syn keyword pgsqlFunction	int8_avg_accum
 syn keyword pgsqlFunction	int8_avg
 syn keyword pgsqlFunction	int8div
-syn keyword pgsqlFunction	int8
 syn keyword pgsqlFunction	int8eq
 syn keyword pgsqlFunction	int8ge
 syn keyword pgsqlFunction	int8gt
@@ -1245,7 +1234,6 @@ syn keyword pgsqlFunction	interval_accum
 syn keyword pgsqlFunction	interval_avg
 syn keyword pgsqlFunction	interval_cmp
 syn keyword pgsqlFunction	interval_div
-syn keyword pgsqlFunction	interval
 syn keyword pgsqlFunction	interval_eq
 syn keyword pgsqlFunction	interval_ge
 syn keyword pgsqlFunction	interval_gt
@@ -1313,7 +1301,6 @@ syn keyword pgsqlFunction	like_escape
 syn keyword pgsqlFunction	likejoinsel
 syn keyword pgsqlFunction	likesel
 syn keyword pgsqlFunction	line_distance
-syn keyword pgsqlFunction	line
 syn keyword pgsqlFunction	line_eq
 syn keyword pgsqlFunction	line_horizontal
 syn keyword pgsqlFunction	line_in
@@ -1343,7 +1330,6 @@ syn keyword pgsqlFunction	lowrite
 syn keyword pgsqlFunction	lpad
 syn keyword pgsqlFunction	lseg_center
 syn keyword pgsqlFunction	lseg_distance
-syn keyword pgsqlFunction	lseg
 syn keyword pgsqlFunction	lseg_eq
 syn keyword pgsqlFunction	lseg_ge
 syn keyword pgsqlFunction	lseg_gt
@@ -1450,7 +1436,6 @@ syn keyword pgsqlFunction	numeric_avg
 syn keyword pgsqlFunction	numeric_cmp
 syn keyword pgsqlFunction	numeric_div
 syn keyword pgsqlFunction	numeric_div_trunc
-syn keyword pgsqlFunction	numeric
 syn keyword pgsqlFunction	numeric_eq
 syn keyword pgsqlFunction	numeric_exp
 syn keyword pgsqlFunction	numeric_fac
@@ -1526,7 +1511,6 @@ syn keyword pgsqlFunction	path_center
 syn keyword pgsqlFunction	path_contain_pt
 syn keyword pgsqlFunction	path_distance
 syn keyword pgsqlFunction	path_div_pt
-syn keyword pgsqlFunction	path
 syn keyword pgsqlFunction	path_in
 syn keyword pgsqlFunction	path_inter
 syn keyword pgsqlFunction	path_length
@@ -1696,7 +1680,6 @@ syn keyword pgsqlFunction	point_add
 syn keyword pgsqlFunction	point_below
 syn keyword pgsqlFunction	point_distance
 syn keyword pgsqlFunction	point_div
-syn keyword pgsqlFunction	point
 syn keyword pgsqlFunction	point_eq
 syn keyword pgsqlFunction	point_horiz
 syn keyword pgsqlFunction	point_in
@@ -1716,7 +1699,6 @@ syn keyword pgsqlFunction	poly_contained
 syn keyword pgsqlFunction	poly_contain
 syn keyword pgsqlFunction	poly_contain_pt
 syn keyword pgsqlFunction	poly_distance
-syn keyword pgsqlFunction	polygon
 syn keyword pgsqlFunction	poly_in
 syn keyword pgsqlFunction	poly_left
 syn keyword pgsqlFunction	poly_npoints
@@ -1941,7 +1923,6 @@ syn keyword pgsqlFunction	tidsend
 syn keyword pgsqlFunction	tidsmaller
 syn keyword pgsqlFunction	time_cmp
 syn keyword pgsqlFunction	timedate_pl
-syn keyword pgsqlFunction	time
 syn keyword pgsqlFunction	time_eq
 syn keyword pgsqlFunction	time_ge
 syn keyword pgsqlFunction	time_gt
@@ -1965,7 +1946,6 @@ syn keyword pgsqlFunction	time_smaller
 syn keyword pgsqlFunction	timestamp_cmp_date
 syn keyword pgsqlFunction	timestamp_cmp
 syn keyword pgsqlFunction	timestamp_cmp_timestamptz
-syn keyword pgsqlFunction	timestamp
 syn keyword pgsqlFunction	timestamp_eq_date
 syn keyword pgsqlFunction	timestamp_eq
 syn keyword pgsqlFunction	timestamp_eq_timestamptz
@@ -1999,7 +1979,6 @@ syn keyword pgsqlFunction	timestamptypmodout
 syn keyword pgsqlFunction	timestamptz_cmp_date
 syn keyword pgsqlFunction	timestamptz_cmp
 syn keyword pgsqlFunction	timestamptz_cmp_timestamp
-syn keyword pgsqlFunction	timestamptz
 syn keyword pgsqlFunction	timestamptz_eq_date
 syn keyword pgsqlFunction	timestamptz_eq
 syn keyword pgsqlFunction	timestamptz_eq_timestamp
@@ -2183,7 +2162,6 @@ syn keyword pgsqlFunction	uuid_out
 syn keyword pgsqlFunction	uuid_recv
 syn keyword pgsqlFunction	uuid_send
 syn keyword pgsqlFunction	varbitcmp
-syn keyword pgsqlFunction	varbit
 syn keyword pgsqlFunction	varbiteq
 syn keyword pgsqlFunction	varbitge
 syn keyword pgsqlFunction	varbitgt
@@ -2196,7 +2174,6 @@ syn keyword pgsqlFunction	varbit_recv
 syn keyword pgsqlFunction	varbit_send
 syn keyword pgsqlFunction	varbittypmodin
 syn keyword pgsqlFunction	varbittypmodout
-syn keyword pgsqlFunction	varchar
 syn keyword pgsqlFunction	varcharin
 syn keyword pgsqlFunction	varcharout
 syn keyword pgsqlFunction	varcharrecv
@@ -2231,7 +2208,6 @@ syn keyword pgsqlFunction	xidsend
 syn keyword pgsqlFunction	xmlagg
 syn keyword pgsqlFunction	xmlcomment
 syn keyword pgsqlFunction	xmlconcat2
-syn keyword pgsqlFunction	xml
 syn keyword pgsqlFunction	xml_in
 syn keyword pgsqlFunction	xml_out
 syn keyword pgsqlFunction	xml_recv
