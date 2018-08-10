@@ -2263,7 +2263,7 @@ hi def link pgsqlCopy			Normal
 hi def link pgsqlBackslash		Special
 " }}}
 
-let b:current_syntax = "pgsql"
+let b:current_syntax = 'pgsql'
 
 " Section: Modelines {{{1
 " vim600: set foldmethod=marker foldlevel=0 :
