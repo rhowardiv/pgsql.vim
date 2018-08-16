@@ -348,11 +348,6 @@ syn match   pgsqlOperator	 "\<or\>"
 syn region pgsqlOperator	 start="isnull\_s*(" end=")" contains=ALL
 syn region pgsqlOperator	 start="coalesce\_s*(" end=")" contains=ALL
 syn region pgsqlOperator	 start="interval\_s*(" end=")" contains=ALL
-syn region pgsqlOperator	 start="in\_s*(" end=")" contains=ALL
-syn region pgsqlOperator	 start="any\_s*(" end=")" contains=ALL
-syn region pgsqlOperator	 start="some\_s*(" end=")" contains=ALL
-syn region pgsqlOperator	 start="all\_s*(" end=")" contains=ALL
-syn region pgsqlOperator	 start="exists\_s*(" end=")" contains=ALL
 syn region pgsqlOperator	 start="array\_s*\[" end="\]" contains=ALL
 
 " Let's consider this an operator, not operator + constant

@@ -572,3 +572,16 @@ $function$;
 CREATE TRIGGER "foobar.account_audit_trg"
 AFTER INSERT OR UPDATE OR UPDATE ON foobar.account
 FOR EACH ROW EXECUTE PROCEDURE audit."foobar.account_fn"();
+
+
+DELETE FROM knockout.sponsored cc
+WHERE (product_id, applications) IN (
+  SELECT p.id, c.id
+  FROM sponsored.product p
+  JOIN sponsored.regional cc
+    ON cc.product_id = p.id
+  JOIN sponsored.product_category c
+    ON c.id = cc.applications
+  WHERE c.name like 'destiny%'
+    AND p.name ilike '%habituate merry%'
+);
