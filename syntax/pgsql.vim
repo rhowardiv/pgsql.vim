@@ -277,9 +277,11 @@ syn match pgsqlVariable		 "\$[0-9]\+"
 syn match pgsqlLabel		 "<<[^>]\+>>"
 
 " psql variables
-syn match pgsqlVariable		 ":[a-zA-Z0-9]\+"
-syn match pgsqlVariable		 ":'[a-zA-Z0-9]\+'"
-syn match pgsqlVariable		 ":\"[a-zA-Z0-9]\+\""
+" negative lookbehinds would tend to be slow,
+" but this is only checking for one character, so I'm optimistic
+syn match pgsqlVariable		 ":\@<!:[a-zA-Z0-9]\+"
+syn match pgsqlVariable		 ":\@<!:'[a-zA-Z0-9]\+'"
+syn match pgsqlVariable		 ":\@<!:\"[a-zA-Z0-9]\+\""
 
 " Is this a class of things or just a sort of an alien?
 syn match pgsqlExtschema		 "@extschema@"

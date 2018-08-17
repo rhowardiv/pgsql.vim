@@ -55,6 +55,8 @@ time (10)
 time
     (10) without time zone
 time (10) with time zone
+-- timestamp should be a type, not a function
+'infinity'::timestamp
 interval
 extract(month from whatever)
 interval (10)
