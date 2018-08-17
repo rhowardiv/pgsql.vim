@@ -838,6 +838,7 @@ syn keyword pgsqlFunction	euc_tw_to_mic
 syn keyword pgsqlFunction	euc_tw_to_utf8
 syn keyword pgsqlFunction	every
 syn keyword pgsqlFunction	exp
+syn keyword pgsqlFunction	extract
 syn keyword pgsqlFunction	factorial
 syn keyword pgsqlFunction	family
 syn keyword pgsqlFunction	first
