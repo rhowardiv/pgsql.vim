@@ -340,7 +340,6 @@ syn region pgsqlType		 start="\<bit\_s\+varying\_s*(" end=")" contains=pgsqlNumb
 
 " Section: Operators {{{1
 " Logical, string and  numeric operators
-" TODO: terms contained within the function are not keywords! --Ryan Delaney 2014-02-06T14:11-0800 OpenGPG: 0D98863B4E1D07B6
 " note: the 'in' operator is defined above, before lockmodes
 syn keyword pgsqlOperator	 between and is like regexp rlike
 syn match   pgsqlOperator	 "\<not\>"
