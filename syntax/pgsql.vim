@@ -357,7 +357,7 @@ syn region pgsqlType		 start="\<bit\_s\+varying\_s*(" end=")" contains=pgsqlNumb
 " Section: Operators {{{1
 " Logical, string and  numeric operators
 " note: the 'in' operator is defined above, before lockmodes
-syn keyword pgsqlOperator	 between and is like regexp rlike ilike
+syn keyword pgsqlOperator	 between and is like regexp rlike ilike any
 syn match   pgsqlOperator	 "\<not\>"
 syn match   pgsqlOperator	 "\<or\>"
 syn region pgsqlOperator	 start="isnull\_s*(" end=")" contains=ALL
