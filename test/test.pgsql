@@ -243,7 +243,6 @@ true or false
 blah in (10, 20)
 blah not in (10, 20)
 exists (select 10)
--- TODO: bah shoud not be keyword
 any (select 10 from bah)
 some (select 10 from bah)
 
