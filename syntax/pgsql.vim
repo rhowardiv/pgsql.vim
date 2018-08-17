@@ -1290,7 +1290,6 @@ syn keyword pgsqlFunction	latin3_to_mic
 syn keyword pgsqlFunction	latin4_to_mic
 syn keyword pgsqlFunction	lead
 syn keyword pgsqlFunction	length
-syn keyword pgsqlFunction	like
 syn keyword pgsqlFunction	like_escape
 syn keyword pgsqlFunction	likejoinsel
 syn keyword pgsqlFunction	likesel
