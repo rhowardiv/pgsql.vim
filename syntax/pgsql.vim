@@ -47,7 +47,6 @@ syn match pgsqlKeyword      "\<foreach\>"
 syn match pgsqlKeyword      "\<full\>"
 syn match pgsqlKeyword	    "\<from\>"
 syn match pgsqlKeyword      "\<grant\>"
-syn match pgsqlKeyword	    "\<group\>"
 syn match pgsqlKeyword      "\<if\>"
 syn match pgsqlOperator     "\<in\>"
 syn match pgsqlKeyword	    "\<key\>"
@@ -180,6 +179,7 @@ syn match pgsqlKeyword      "\<with\_s\+ordinality\>"
 syn match pgsqlKeyword      "\<\(\(inner\|cross\|\(left\|right\|full\)\(\_s\+outer\)\?\)\_s\+\)\?join\>"
 syn match pgsqlKeyword      "\<union\(\_s\+all\)\?\>"
 syn match pgsqlKeyword      "\<\(unbounded\_s\+\)\?\(preceding\|following\)\>"
+syn match pgsqlKeyword      "\<group\_s\+by\>"
 syn match pgsqlKeyword      "\<order\_s\+by\>"
 syn match pgsqlKeyword      "\<current\_s\+row\>"
 syn match pgsqlKeyword      "\<partition\_s\+by\>"
@@ -211,7 +211,7 @@ syn keyword pgsqlKeyword	 databases distinct declare deallocate desc
 syn keyword pgsqlKeyword	 deferrable diagnostics
 syn keyword pgsqlKeyword	 explain elsif exclusion found exception except exclude exit
 syn keyword pgsqlKeyword	 force
-syn keyword pgsqlKeyword	 group global get
+syn keyword pgsqlKeyword	 global get
 syn keyword pgsqlKeyword	 having
 syn keyword pgsqlKeyword	 immutable inherits inline intersect
 syn keyword pgsqlKeyword	 leakproof lock local limit load loop listen lateral
