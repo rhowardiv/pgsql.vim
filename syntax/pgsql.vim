@@ -331,7 +331,6 @@ syn region pgsqlType		 start="\<decimal\_s*(" end=")" contains=pgsqlNumber,pgsql
 syn match  pgsqlType		 "\<time\(stamp\(tz\)\?\)\?\>"
 syn region pgsqlType		 start="\<time\(stamp\(tz\)\?\)\?\_s*(" end=")" contains=pgsqlNumber,pgsqlVariable
 syn match  pgsqlType		 "\<interval\>"
-syn region pgsqlType		 start="\<interval\_s*(" end=")" contains=pgsqlNumber,pgsqlVariable
 syn match  pgsqlType		 "\<interval\_s\+\(year\|month\|day\|hour\|minute\|second\)\>"
 syn match  pgsqlType		 "\<interval\_s\+year\_s\+to\_s\+month\>"
 syn match  pgsqlType		 "\<interval\_s\+day\_s\+to\_s\+\(hour\|minute\|second\)\>"

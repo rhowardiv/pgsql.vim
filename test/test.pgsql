@@ -58,7 +58,6 @@ time (10) with time zone
 interval
 extract(month from whatever)
 interval (10)
--- TODO: why is this all a keyword???
 extract(month from whatever)
 interval year
 extract(month from whatever)
