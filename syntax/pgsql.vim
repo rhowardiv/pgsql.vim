@@ -204,7 +204,7 @@ syn match pgsqlKeyword      "\<raise\_s\+\(debug\|log\|info\|notice\|warning\|ex
 syn match pgsqlKeyword      "\<return\_s\+query\>"
 
 syn keyword pgsqlKeyword	 and alias asc
-syn keyword pgsqlKeyword	 cascade current_date current_time current_timestamp
+syn keyword pgsqlKeyword	 cascade
 syn keyword pgsqlKeyword	 checkpoint check cost
 syn keyword pgsqlKeyword	 check columns constraint
 syn keyword pgsqlKeyword	 databases distinct declare deallocate desc
@@ -723,10 +723,13 @@ syn keyword pgsqlFunction	cstring_recv
 syn keyword pgsqlFunction	cstring_send
 syn keyword pgsqlFunction	cume_dist
 syn keyword pgsqlFunction	current_database
+syn keyword pgsqlFunction	current_date
 syn keyword pgsqlFunction	current_query
 syn keyword pgsqlFunction	current_schema
 syn keyword pgsqlFunction	current_schemas
 syn keyword pgsqlFunction	current_setting
+syn keyword pgsqlFunction	current_time
+syn keyword pgsqlFunction	current_timestamp
 syn keyword pgsqlFunction	current_user
 syn keyword pgsqlFunction	currtid2
 syn keyword pgsqlFunction	currtid
