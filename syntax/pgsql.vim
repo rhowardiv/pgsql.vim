@@ -1332,6 +1332,8 @@ syn keyword pgsqlFunction	lo_close
 syn keyword pgsqlFunction	lo_create
 syn keyword pgsqlFunction	lo_creat
 syn keyword pgsqlFunction	lo_export
+syn keyword pgsqlFunction	localtime
+syn keyword pgsqlFunction	localtimestamp
 syn keyword pgsqlFunction	log
 syn keyword pgsqlFunction	lo_import
 syn keyword pgsqlFunction	lo_lseek
