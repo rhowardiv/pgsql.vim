@@ -24,6 +24,8 @@ syn case ignore
 
 " Section: Miscellaneous {{{2
 
+syn region pgsqlIdentifier	 matchgroup=Parens start="("  end=")" contains=ALL
+
 " General keywords which don't fall into other categories {{{3
 "
 " Use match instead of keyword to lower priority and allow data types bits
@@ -303,7 +305,6 @@ syn keyword pgsqlType        internal int2vector int int2 int4 int8 integer
 syn keyword pgsqlType        json jsonb
 syn keyword pgsqlType        line lseg language_handler
 syn keyword pgsqlType        macaddr money
-syn keyword pgsqlType        numeric
 syn keyword pgsqlType        opaque oidvector oid
 syn keyword pgsqlType        polygon point path period
 syn keyword pgsqlType        regclass real regtype refcursor regoperator
@@ -315,7 +316,7 @@ syn keyword pgsqlType        tsquery tinterval
 syn keyword pgsqlType        trigger tid text
 syn keyword pgsqlType        tsvector txid_snapshot
 syn keyword pgsqlType        unknown uuid
-syn keyword pgsqlType        void varchar
+syn keyword pgsqlType        void
 syn keyword pgsqlType        xml xid
 " %rowtype, %type PL/pgSQL constructs
 syn match pgsqlType          "%\(row\)\?type\>"
@@ -2238,11 +2239,12 @@ syn keyword pgsqlFunction	xpath
 " For version 5.7 and earlier: only when not done already
 " For version 5.8 and later: only when an item doesn't have highlighting yet
 
-hi def link Quote            Special
+hi def link Parens				Delimiter
+hi def link Quote				Delimiter
 hi def link pgsqlKeyword		Statement
 hi def link pgsqlConstant		Constant
-hi def link pgsqlString		String
-hi def link pgsqlNumber		Number
+hi def link pgsqlString	  	 	String
+hi def link pgsqlNumber			Number
 hi def link pgsqlVariable		Identifier
 hi def link pgsqlComment		Comment
 hi def link pgsqlType			Type
@@ -2252,7 +2254,7 @@ hi def link pgsqlFunction		Function
 hi def link pgsqlLabel			Label
 hi def link pgsqlExtschema		Special
 hi def link pgsqlTodo			Todo
-hi def link pgsqlIdentifier	Normal
+hi def link pgsqlIdentifier		Normal
 hi def link pgsqlCopy			Normal
 hi def link pgsqlBackslash		Special
 " }}}
