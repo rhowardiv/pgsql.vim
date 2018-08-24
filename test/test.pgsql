@@ -594,6 +594,7 @@ CREATE OR REPLACE FUNCTION audit."foobar.account_fn"()
  LANGUAGE plpgsql
  SECURITY DEFINER
 AS $function$
+-- should highlight as SQL
 begin
     if tg_op <> 'DELETE' then
         insert into audit."foobar.account" values (default, tg_op, new.*);
@@ -608,6 +609,16 @@ $function$;
 CREATE TRIGGER "foobar.account_audit_trg"
 AFTER INSERT OR UPDATE OR UPDATE ON foobar.account
 FOR EACH ROW EXECUTE PROCEDURE audit."foobar.account_fn"();
+
+
+COMMENT ON TABLE foo IS
+$foo$This is a string that should look like
+a string.$foo$;
+
+
+COMMENT ON TABLE bar IS
+$$This is also a string that should look like
+a string.$$;
 
 
 DELETE FROM knockout.sponsored cc

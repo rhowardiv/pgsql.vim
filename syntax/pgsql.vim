@@ -242,8 +242,8 @@ syn region pgsqlIdentifier	 matchgroup=Quote start=+U&"+  skip=+\\\\\|\\"+  end=
 
 syn region pgsqlString		 matchgroup=Quote start=+'+  skip=+\\\\\|\\'+  end=+'+
 syn region pgsqlString		 matchgroup=Quote start=+U&'+  skip=+\\\\\|\\'+  end=+'+
-
-syn match pgsqlString		 "\$\w*\$"
+syn region pgsqlString		 matchgroup=Quote start=+\$\z([^\$]*\)\$+  end=+\$\z1\$+
+syn region pgsqlString		 matchgroup=Quote start=+\$\z(function\|sql\)\$+  end=+\$\z1\$+ contains=ALL
 " }}}
 
 " Section: Numbers {{{2
