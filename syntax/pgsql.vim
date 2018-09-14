@@ -33,6 +33,7 @@ syn region pgsqlIdentifier	 matchgroup=Parens start="("  end=")" contains=ALL
 syn match pgsqlKeyword	    "\<as\>"
 syn match pgsqlKeyword	    "\<add\>"
 syn match pgsqlKeyword	    "\<all\>"
+syn match pgsqlKeyword	    "\<authorization\>"
 syn match pgsqlKeyword	    "\<cast\>"
 syn match pgsqlKeyword	    "\<cluster\>"
 syn match pgsqlKeyword	    "\<conflict\>"

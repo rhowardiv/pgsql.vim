@@ -312,6 +312,7 @@ create event trigger execute procedure
 create extension with schema x version y from z
 create or replace function returns xcf language plpgsql
 create or replace trusted procedural language x handler x validator x inline x
+create schema foo authorization bar
 create trusted procedural language x handler x validator x inline x
 create unique index foo
 create unique index concurrently foo
