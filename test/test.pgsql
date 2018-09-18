@@ -131,7 +131,15 @@ false
 any(x),  any (x)
 all(x),  all (x)
 array[10,20],    array [10]
-
+a not b
+a <> b
+a != b
+a > b
+a < b
+a >= b
+a <= b
+a is distinct from b
+a := b
 -- false positive constant
 not null
 

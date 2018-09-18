@@ -211,8 +211,10 @@ syn keyword pgsqlKeyword	 and alias asc
 syn keyword pgsqlKeyword	 cascade
 syn keyword pgsqlKeyword	 checkpoint check cost
 syn keyword pgsqlKeyword	 check columns constraint
-syn keyword pgsqlKeyword	 databases distinct declare deallocate desc
+syn keyword pgsqlKeyword	 databases
+syn keyword pgsqlKeyword	 declare deallocate desc
 syn keyword pgsqlKeyword	 deferrable diagnostics
+syn match   pgsqlKeyword     "\<distinct\>"
 syn keyword pgsqlKeyword	 explain elsif exclusion found exception except exclude exit
 syn keyword pgsqlKeyword	 force
 syn keyword pgsqlKeyword	 global get
@@ -362,13 +364,20 @@ syn region pgsqlType		 start="\<bit\_s\+varying\_s*(" end=")" contains=pgsqlNumb
 " Section: Operators {{{1
 " Logical, string and  numeric operators
 " note: the 'in' operator is defined above, before lockmodes
-syn keyword pgsqlOperator	 between and is like regexp rlike ilike any
+syn keyword pgsqlOperator	 between symmetric and is like regexp rlike ilike any
 syn match   pgsqlOperator	 "\<not\>"
 syn match   pgsqlOperator	 "\<or\>"
 syn region pgsqlOperator	 start="isnull\_s*(" end=")" contains=ALL
 syn region pgsqlOperator	 start="coalesce\_s*(" end=")" contains=ALL
 syn region pgsqlOperator	 start="interval\_s*(" end=")" contains=ALL
 syn region pgsqlOperator	 start="array\_s*\[" end="\]" contains=ALL
+syn match pgsqlOperator	     "\<distinct\_s\+from\>"
+syn match pgsqlOperator	     ":="
+syn match pgsqlOperator	     "="
+syn match pgsqlOperator	     "<>"
+syn match pgsqlOperator	     "!="
+syn match pgsqlOperator	     ">=\?"
+syn match pgsqlOperator	     "<=\?"
 
 " Let's consider this an operator, not operator + constant
 syn match   pgsqlKeyword	 "\<not\_s\+null\>"
@@ -2250,7 +2259,7 @@ hi def link pgsqlNumber			Number
 hi def link pgsqlVariable		Identifier
 hi def link pgsqlComment		Comment
 hi def link pgsqlType			Type
-hi def link pgsqlOperator		Statement
+hi def link pgsqlOperator		Operator
 hi def link pgsqlFlow			Statement
 hi def link pgsqlFunction		Function
 hi def link pgsqlLabel			Label
