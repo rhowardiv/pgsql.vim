@@ -266,7 +266,8 @@ syn match pgsqlNumber		 "\<0x[abcdefABCDEF0-9]*\>"
 syn region  pgsqlComment    start="/\*"  end="\*/" contains=pgsqlTodo,pgsqlComment
 syn match   pgsqlComment    "--.*" contains=pgsqlTodo
 syn sync    ccomment        pgsqlComment
-syn keyword pgsqlTodo       todo note xxx warn warning contained
+syn keyword pgsqlTodo       todo xxx warn warning contained
+syn match   pgsqlTodo       "\<note:"
 " }}}
 
 " Section: Variables {{{2
