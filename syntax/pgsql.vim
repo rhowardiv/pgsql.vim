@@ -364,13 +364,13 @@ syn region pgsqlType		 start="\<bit\_s\+varying\_s*(" end=")" contains=pgsqlNumb
 " Section: Operators {{{1
 " Logical, string and  numeric operators
 " note: the 'in' operator is defined above, before lockmodes
-syn keyword pgsqlOperator	 between symmetric and is like regexp rlike ilike any
+syn keyword pgsqlOperator	 array between symmetric and is like regexp rlike ilike any
 syn match   pgsqlOperator	 "\<not\>"
 syn match   pgsqlOperator	 "\<or\>"
 syn region pgsqlOperator	 start="isnull\_s*(" end=")" contains=ALL
 syn region pgsqlOperator	 start="coalesce\_s*(" end=")" contains=ALL
 syn region pgsqlOperator	 start="interval\_s*(" end=")" contains=ALL
-syn region pgsqlOperator	 start="array\_s*\[" end="\]" contains=ALL
+syn region pgsqlOperator	 matchgroup=Quote start="\[" end="\]" contains=ALL
 syn match pgsqlOperator	     "\<distinct\_s\+from\>"
 syn match pgsqlOperator	     ":="
 syn match pgsqlOperator	     "="
