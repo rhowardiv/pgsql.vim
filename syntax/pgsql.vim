@@ -369,7 +369,6 @@ syn keyword pgsqlOperator	 array between symmetric and is like regexp rlike ilik
 syn match   pgsqlOperator	 "\<not\>"
 syn match   pgsqlOperator	 "\<or\>"
 syn region pgsqlOperator	 start="isnull\_s*(" end=")" contains=ALL
-syn region pgsqlOperator	 start="coalesce\_s*(" end=")" contains=ALL
 syn region pgsqlOperator	 start="interval\_s*(" end=")" contains=ALL
 syn region pgsqlOperator	 matchgroup=Quote start="\[" end="\]" contains=ALL
 syn match pgsqlOperator	     "\<distinct\_s\+from\>"
@@ -716,6 +715,7 @@ syn keyword pgsqlFunction	close_pl
 syn keyword pgsqlFunction	close_ps
 syn keyword pgsqlFunction	close_sb
 syn keyword pgsqlFunction	close_sl
+syn keyword pgsqlFunction	coalesce
 syn keyword pgsqlFunction	col_description
 syn keyword pgsqlFunction	contained_by
 syn keyword pgsqlFunction	contains

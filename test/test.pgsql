@@ -641,3 +641,16 @@ WHERE (product_id, applications) IN (
   WHERE c.name like 'destiny%'
     AND p.name ilike '%habituate merry%'
 );
+
+-- FROM subquery + coalesce
+SELECT
+    foo, bar
+FROM (
+    SELECT COALESCE(baz, quux) AS artillery
+    FROM expressway
+    JOIN cheat
+    ON toneless = mockers
+    WHERE prospectors = 'doorknob'
+) AS p
+JOIN bylaw
+ON lames = carburetor
