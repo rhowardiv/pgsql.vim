@@ -460,6 +460,7 @@ syn keyword pgsqlFunction	array_out
 syn keyword pgsqlFunction	arrayoverlap
 syn keyword pgsqlFunction	array_prepend
 syn keyword pgsqlFunction	array_recv
+syn keyword pgsqlFunction	array_remove
 syn keyword pgsqlFunction	array_send
 syn keyword pgsqlFunction	array_smaller
 syn keyword pgsqlFunction	array_to_string
