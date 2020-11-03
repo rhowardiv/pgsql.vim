@@ -17,6 +17,10 @@ elseif exists('b:current_syntax')
   finish
 endif
 
+if !exists('g:main_syntax')
+  let g:main_syntax = 'pgsql'
+endif
+
 " Always ignore case
 syn case ignore
 
@@ -263,7 +267,18 @@ syn match pgsqlNumber		 "\<0x[abcdefABCDEF0-9]*\>"
 
 " Section: Comments {{{2
 " Comments (c-style, sql-style)
-syn region  pgsqlComment    start="/\*"  end="\*/" contains=pgsqlTodo,pgsqlComment
+if main_syntax ==# 'pgsql' && !exists('g:pgsql_syntax_loaded')
+    " let markdown.vim do its includes
+    " but prevent cycling back here if SQL is included there
+    let g:pgsql_syntax_loaded = 1
+    let g:main_syntax = 'markdown'
+    syn include @markdownComments syntax/markdown.vim
+    unlet g:pgsql_syntax_loaded
+    let g:main_syntax = 'pgsql'
+    syn region  pgsqlComment    matchgroup=pgsqlComment start="/\*" end="\*/"me=e-2 contains=pgsqlComment,@markdownComments,pgsqlTodo
+else
+    syn region  pgsqlComment    start="/\*"  end="\*/" contains=pgsqlTodo,pgsqlComment
+endif
 syn match   pgsqlComment    "--.*" contains=pgsqlTodo
 syn sync    ccomment        pgsqlComment
 syn keyword pgsqlTodo       todo xxx warn warning contained
