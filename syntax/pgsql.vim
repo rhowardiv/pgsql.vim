@@ -275,7 +275,7 @@ if main_syntax ==# 'pgsql' && !exists('g:pgsql_syntax_loaded')
     syn include @markdownComments syntax/markdown.vim
     unlet g:pgsql_syntax_loaded
     let g:main_syntax = 'pgsql'
-    syn region  pgsqlComment    matchgroup=pgsqlComment start="/\*" end="\*/"me=e-2 contains=pgsqlComment,@markdownComments,pgsqlTodo
+    syn region  pgsqlComment    matchgroup=pgsqlComment start="/\*" end="\*/"me=e-2 keepend contains=pgsqlComment,@markdownComments,pgsqlTodo
 else
     syn region  pgsqlComment    start="/\*"  end="\*/" contains=pgsqlTodo,pgsqlComment
 endif
